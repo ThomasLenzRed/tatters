@@ -11,4 +11,4 @@ e.g. issues closed
 If needed, describe things in more depth or mention related things not changed
 
 ** Compatibility Issues **
-Describe any potential problems this change may for existing users 
+Describe any potential problems this change may have for existing users 
