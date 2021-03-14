@@ -1,0 +1,64 @@
+/*
+ * This file is part of Tatters.
+ * Copyright (c) 2021, warjort and others, All rights reserved.
+ *
+ * Tatters is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Tatters is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Tatters.  If not, see <http://www.gnu.org/licenses/lgpl>.
+ */
+
+plugins {
+    id 'fabric-loom' version "$loomVersion"
+}
+
+compileJava.options.encoding='UTF-8'
+tasks.withType(JavaCompile).configureEach {
+    options.encoding='UTF-8'
+    def targetVersion = 8
+    if (JavaVersion.current().isJava9Compatible()) {
+        it.options.release = targetVersion
+    } else {
+        sourceCompatibility = JavaVersion.toVersion(targetVersion)
+        targetCompatibility = JavaVersion.toVersion(targetVersion)
+    }
+}
+
+archivesBaseName = rootProject.name
+version = baseVersion
+
+dependencies {
+    minecraft "com.mojang:minecraft:$mcVersion"
+    mappings "net.fabricmc:yarn:${mcVersion}${yarnVersion}"
+    modImplementation "net.fabricmc:fabric-loader:${loaderVersion}"
+    modRuntime "net.fabricmc.fabric-api:fabric-api:${apiVersion}"
+}
+
+minecraft {
+    accessWidener = file("src/main/resources/tatters.accesswidener")
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.archivesBaseName}"}
+    }
+    from("CONTRIBUTORS") {
+        rename { "${it}_${project.archivesBaseName}"}
+    }
+}
+
+afterEvaluate {
+    processResources {
+        filesMatching('fabric.mod.json') {
+            expand project.properties
+        }
+    }
+}

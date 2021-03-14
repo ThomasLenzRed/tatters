@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "tatters.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ChunkGeneratorMixin",
+    "CommandManagerMixin",
+    "GeneratorOptionsMixin",
+    "ServerWorldMixin"
+  ],
+  "client": [
+    "GeneratorTypeMixin"
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
