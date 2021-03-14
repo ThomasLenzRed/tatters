@@ -5,6 +5,24 @@
   "name": "Traditional",
   "layersComment": "layers, rows, columns of characters specifying block keys, blank is air",
   "layers": [
+     [
+      "       ",
+      "  dddd ",
+      "  dddd ",
+      "  dd   ",
+      "  dd   ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "  dddd ",
+      "  dddd ",
+      "  dd   ",
+      "  dd   ",
+      "       ",
+      "       "
+    ],
     [
       "       ",
       "  dddd ",
