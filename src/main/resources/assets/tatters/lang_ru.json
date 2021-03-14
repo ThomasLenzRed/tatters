@@ -1,0 +1,17 @@
+{
+  "generator.tatters": "Sky Block",
+
+  "tatters.command.help.0": "/tatters help - Введите это сообщение",
+  "tatters.command.help.1": "/tatters lobby - Перемещение игрока к основному острому",
+  "tatters.command.help.2": "/tatters home <player> - Телепортирует указаного игрока к его острову, или создает ему остров если такого не имеется (в сингплеере используйте лобби подкоманду (наверное lobby))", 
+  "tatters.command.help.3": "/tatters regen <player> - создать новый остров для игрока (даже если у него уже есть) и телепортировать его к нему",
+  "tatters.command.help.4": "/tatters visit <player> - телепортировать игрока к указаному Острову другого игрока",
+  "tatters.command.help.5": "/tatters team <player> <team> - Телепортирует игрока к его групповому острову, создает остров если он требуется и перемещает игрока к его группе",
+  "tatters.command.help.6": "/tatters list - Показывает запрашиваемый остров в списке логов игры (logs)",
+  "tatters.command.help.7": "/tatters reload - Перезагрузка файлов настроек",
+  "tatters.command.error": "Упс, неожиданная ошибка, проверь Лог(log)", 
+  "tatters.command.noskyblock": "У игрока нет острова",
+  "tatters.command.noteleport": "Не получается телепортировать игрока через миры",
+  "tatters.command.reloaded": "Настройки перезагружены", 
+  "tatters.command.wrongworld": "Это не тот мир, не tatters Skyblock мир если что"
+}
