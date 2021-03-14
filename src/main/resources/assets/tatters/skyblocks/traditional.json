@@ -16,6 +16,15 @@
     ],
     [
       "       ",
+      "  dddd ",
+      "  dddd ",
+      "  dd   ",
+      "  dd   ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
       "  gggg ",
       "  gggg ",
       "  gg   ",
@@ -88,9 +97,9 @@
       "properties": {
         "facing": "north",
         "type": "single",
-        "waterlogged": false
+        "waterlogged": "false"
       },
-      "nbt": "{Items:[{Slot:0b,id:\"minecraft:lava_bucket\",Count:1b},{Slot:1b,id:\"minecraft:ice\",Count:2b}]}"
+      "nbt": "{Items:[{Slot:0b,id:\"minecraft:lava_bucket\",Count:1b},{Slot:1b,id:\"minecraft:ice\",Count:2b},{Slot:2b,id:\"minecraft:red_mushroom\",Count:1b},{Slot:3b,id:\"minecraft:brown_mushroom\",Count:1b},{Slot:4b,id:\"minecraft:melon_slice\",Count:1b},{Slot:5b,id:\"minecraft:pumpkin_seeds\",Count:1b},{Slot:6b,id:\"minecraft:sugar_cane\",Count:1b},{Slot:7b,id:\"minecraft:cactus\",Count:1b}, ]}"
     }
   }
 }
