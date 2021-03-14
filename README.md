@@ -1,4 +1,5 @@
 # Tatters Skyblock
+[Curseforge](https://www.curseforge.com/minecraft/mc-mods/tatters-skyblock)
 
 ## Table of Contents
 * [Overview](#about)
